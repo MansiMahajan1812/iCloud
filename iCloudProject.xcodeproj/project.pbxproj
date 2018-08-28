@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B19188D220F639BF006B182E /* ViewControllerEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19188D120F639BF006B182E /* ViewControllerEdit.swift */; };
 		B1926D4120F330330021D0D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1926D4020F330330021D0D3 /* AppDelegate.swift */; };
 		B1926D4320F330330021D0D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1926D4220F330330021D0D3 /* ViewController.swift */; };
 		B1926D4620F330330021D0D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1926D4420F330330021D0D3 /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		B1926D4B20F330330021D0D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1926D4920F330330021D0D3 /* LaunchScreen.storyboard */; };
 		B1926D5620F330330021D0D3 /* iCloudProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1926D5520F330330021D0D3 /* iCloudProjectTests.swift */; };
 		B1926D6120F330330021D0D3 /* iCloudProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1926D6020F330330021D0D3 /* iCloudProjectUITests.swift */; };
+		B1926D6F20F335B50021D0D3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1926D6E20F335B50021D0D3 /* TableViewCell.swift */; };
+		B1926D7120F336060021D0D3 /* ViewControllerShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1926D7020F336060021D0D3 /* ViewControllerShow.swift */; };
+		B1926D8120F35AE80021D0D3 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1926D8020F35AE80021D0D3 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B19188D120F639BF006B182E /* ViewControllerEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerEdit.swift; sourceTree = "<group>"; };
 		B1926D3D20F330330021D0D3 /* iCloudProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCloudProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1926D4020F330330021D0D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1926D4220F330330021D0D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,10 @@
 		B1926D5C20F330330021D0D3 /* iCloudProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCloudProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1926D6020F330330021D0D3 /* iCloudProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloudProjectUITests.swift; sourceTree = "<group>"; };
 		B1926D6220F330340021D0D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1926D6E20F335B50021D0D3 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		B1926D7020F336060021D0D3 /* ViewControllerShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerShow.swift; sourceTree = "<group>"; };
+		B1926D7220F33CD70021D0D3 /* iCloudProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iCloudProject.entitlements; sourceTree = "<group>"; };
+		B1926D8020F35AE80021D0D3 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1926D8120F35AE80021D0D3 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +91,7 @@
 				B1926D5420F330330021D0D3 /* iCloudProjectTests */,
 				B1926D5F20F330330021D0D3 /* iCloudProjectUITests */,
 				B1926D3E20F330330021D0D3 /* Products */,
+				B1926D7320F347FA0021D0D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +108,16 @@
 		B1926D3F20F330330021D0D3 /* iCloudProject */ = {
 			isa = PBXGroup;
 			children = (
+				B1926D7220F33CD70021D0D3 /* iCloudProject.entitlements */,
 				B1926D4020F330330021D0D3 /* AppDelegate.swift */,
 				B1926D4220F330330021D0D3 /* ViewController.swift */,
 				B1926D4420F330330021D0D3 /* Main.storyboard */,
 				B1926D4720F330330021D0D3 /* Assets.xcassets */,
 				B1926D4920F330330021D0D3 /* LaunchScreen.storyboard */,
 				B1926D4C20F330330021D0D3 /* Info.plist */,
+				B1926D6E20F335B50021D0D3 /* TableViewCell.swift */,
+				B1926D7020F336060021D0D3 /* ViewControllerShow.swift */,
+				B19188D120F639BF006B182E /* ViewControllerEdit.swift */,
 			);
 			path = iCloudProject;
 			sourceTree = "<group>";
@@ -123,6 +138,14 @@
 				B1926D6220F330340021D0D3 /* Info.plist */,
 			);
 			path = iCloudProjectUITests;
+			sourceTree = "<group>";
+		};
+		B1926D7320F347FA0021D0D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1926D8020F35AE80021D0D3 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +216,18 @@
 				TargetAttributes = {
 					B1926D3C20F330330021D0D3 = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					B1926D5020F330330021D0D3 = {
 						CreatedOnToolsVersion = 9.1;
@@ -259,8 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1926D6F20F335B50021D0D3 /* TableViewCell.swift in Sources */,
 				B1926D4320F330330021D0D3 /* ViewController.swift in Sources */,
 				B1926D4120F330330021D0D3 /* AppDelegate.swift in Sources */,
+				B19188D220F639BF006B182E /* ViewControllerEdit.swift in Sources */,
+				B1926D7120F336060021D0D3 /* ViewControllerShow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,11 +463,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = iCloudProject/iCloudProject.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: mss.softprodigy@gmail.com (53WJCPJWHZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: mss.softprodigy@gmail.com (53WJCPJWHZ)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 4Q92Z86L4P;
 				INFOPLIST_FILE = iCloudProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TVE.iCloudProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.icloudProject.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7e3ffd6f-b291-4c74-aff8-9dfcddfffce0";
+				PROVISIONING_PROFILE_SPECIFIER = iCloudProvisioning9July;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -440,11 +484,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = iCloudProject/iCloudProject.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: mss.softprodigy@gmail.com (53WJCPJWHZ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: mss.softprodigy@gmail.com (53WJCPJWHZ)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 4Q92Z86L4P;
 				INFOPLIST_FILE = iCloudProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TVE.iCloudProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.icloudProject.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5509a88f-a9bd-450a-8ea9-f39a495e5c8e";
+				PROVISIONING_PROFILE_SPECIFIER = iCloudProvisioning9July;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
